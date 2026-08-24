@@ -273,3 +273,13 @@
 # text1=check_age(19)
 # print(text1)
 
+# def test(items):
+#     items = [100]
+#
+# numbers = [1, 2, 3]
+#
+# out=test(numbers)
+# print(out)
+#
+# print(numbers)
+

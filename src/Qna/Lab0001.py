@@ -82,31 +82,31 @@
 # else:
 #     print(f'The folder {folder_path} does not exist.')
 
-import os
-
-print(os.listdir())
-print(os.getcwd())
-
-folder_path = r"C:\Users\nitingpa\PycharmProjects\Project1\src"
-
-if os.path.exists(folder_path):
-    print(f'The folder {folder_path} exists.')
-
-    txt_files = []
-
-    for f in os.listdir(folder_path):
-        if f.lower().endswith(".txt"):
-            txt_files.append(f)
-
-    if txt_files:
-        print("Found .txt files:")
-        for file in txt_files:
-            print(f" - {file}")
-    else:
-        print("No .txt files found in the folder.")
-
-else:
-    print(f'The folder {folder_path} does not exist.')
+# import os
+#
+# print(os.listdir())
+# print(os.getcwd())
+#
+# folder_path = r"C:\Users\nitingpa\PycharmProjects\Project1\src"
+#
+# if os.path.exists(folder_path):
+#     print(f'The folder {folder_path} exists.')
+#
+#     txt_files = []
+#
+#     for f in os.listdir(folder_path):
+#         if f.lower().endswith(".txt"):
+#             txt_files.append(f)
+#
+#     if txt_files:
+#         print("Found .txt files:")
+#         for file in txt_files:
+#             print(f" - {file}")
+#     else:
+#         print("No .txt files found in the folder.")
+#
+# else:
+#     print(f'The folder {folder_path} does not exist.')
 
 # import os
 # folder="dir1"
@@ -114,6 +114,65 @@ else:
 #     if file.endswith(".log"):
 #         out=os.remove(os.path.join(folder, file))
 #         print("removed", file)
+
+# 1) Write function for calculator  which can return the output for 2 numbers with kind of operation provided.
+# def calculator(a,b,operation):
+#     if operation == "add":
+#         return a+b
+#     elif operation == "sub":
+#         return a-b
+#     elif operation == "mul":
+#         return a*b
+#     elif operation == "division":
+#         if b == 0:
+#             raise ValueError("Cannot divide by zero.")
+#         return a / b
+#     elif operation == 'power':
+#         return a ** b
+#     else:
+#         raise ValueError(
+#             f"Invalid operation: {operation}. Choose from add, subtract, multiply, divide, power.")
+# # print(f"Result of {operation} is {result}")
+#
+# out=calculator(2,3,"add")
+# print(out)
+#
+#
+#
+#
+# 2) Write function that can return repetitive elements .
+# def repetitive_elements(numbers):
+#
+#         element_counts = {}
+#         for item in numbers:
+#             if item in element_counts:
+#                 element_counts[item] += 1
+#             else:
+#                 element_counts[item] = 1
+#         # print(element_counts())
+#
+#
+#         repetitive_elements1 = []
+#         for item, count in element_counts.items():
+#             if count > 1:
+#                 repetitive_elements1.append(item)
+#
+#         return repetitive_elements1
+#
+# numbers = [1, 2, 3, 2, 4, 5, 1, 6, 3, 7]
+# print("Repetitive elements:", repetitive_elements(numbers))
+# print(element_counts(numbers))
+
+numbers = [1, 2, 3, 2, 4, 5, 1, 6, 3, 7]
+Count={}
+for char in numbers:
+    if char in Count:
+        Count[char] += 1
+    else:
+        Count[char] = 1
+print(Count)
+
+
 
 
 
